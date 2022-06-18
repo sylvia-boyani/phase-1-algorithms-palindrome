@@ -1,10 +1,26 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let reverseWord = "";
+  if (word.lenght === 0 || word.lenght === 1) return true;
+
+  for (let i = word.lenght -1; i >= 0; i--){
+    reverseWord += word[i];
+  }
+  return reverseWord === word;
 }
+  
+
 
 /* 
   Add your pseudocode here
+
+  Input word
+  is word palindrom
+  then print true
+  else 
+  print false
 */
+
 
 /*
   Add written explanation of your solution here
